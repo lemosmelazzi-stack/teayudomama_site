@@ -2,89 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Te Ayudo Mamá – Compañía, Cuidado y Tranquilidad</title>
-  <meta name="description" content="Te Ayudo Mamá: compañía cálida y práctica para mamás que viven solas. Diálogos breves, recordatorios simples y voces amables (ES/EN).">
-  <style>
-    :root{--bg:#0b0f14;--card:#111826;--text:#eaf2f7;--muted:#a7bdcc;--brand:#7CC7E8}
-    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    .wrap{max-width:1080px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .logo{display:flex;align-items:center;gap:10px}
-    .badge{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--brand),#bfe9f7)}
-    .btn{border:1px solid #2a3b4d;background:#142031;color:var(--text);padding:10px 14px;border-radius:12px;text-decoration:none;display:inline-block}
-    .btn:hover{filter:brightness(1.08)} .primary{background:linear-gradient(180deg,var(--brand),#5bb4d6);border:none;color:#052233}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;margin-top:16px}
-    .card{background:#111826;border:1px solid #223245;border-radius:18px;padding:18px}
-    h1{margin:.2rem 0 .6rem;font-size:clamp(28px,5vw,44px)} .small{color:var(--muted);font-size:15px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:20px}
-    footer{margin:28px 0 6px;color:var(--muted);font-size:14px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Te Ayudo Mamá</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo"><div class="badge"></div><strong>Te Ayudo Mamá</strong></div>
-    <nav style="display:flex;gap:8px">
-      <a class="btn" href="#features">Características</a>
-      <a class="btn" href="#personas">Asistentes</a>
-      <a class="btn primary" href="#beta">Unirme a la Beta</a>
+  <div class="wrap">
+    <h1>Te Ayudo Mamá</h1>
+    <p>Elegí un personaje para ingresar a su sección:</p>
+
+    <nav>
+      <a href="/en/iris/">Iris</a>
+      <a href="/en/max/">Max</a>
+      <a href="/en/luna/">Luna</a>
+      <a href="/en/linda/">Linda</a>
     </nav>
-  </header>
 
-  <section class="hero">
-    <div class="card">
-      <h1>Una compañía cálida, todos los días</h1>
-      <p class="small">Mensajes breves, recordatorios simples y voces amables (ES/EN) para que mamá se sienta acompañada.</p>
-      <p style="display:flex;gap:8px;margin-top:8px">
-        <a class="btn primary" href="#beta">Quiero probar la Beta</a>
-        <a class="btn" href="#features">Ver cómo funciona</a>
-      </p>
+    <div class="grid">
+      <div class="card"><h3>Iris</h3><p>Asistente principal.</p></div>
+      <div class="card"><h3>Max</h3><p>Soporte y utilidades.</p></div>
+      <div class="card"><h3>Luna</h3><p>Creatividad y energía.</p></div>
+      <div class="card"><h3>Linda</h3><p>Companía y empatía.</p></div>
     </div>
-    <div class="card">
-      <h2 style="margin:0 0 8px">Así funciona</h2>
-      <ul class="small" style="line-height:1.6;margin:0;padding-left:18px">
-        <li>Elegí un asistente: Iris, Luna, Max o Linda.</li>
-        <li>Recibí mensajes breves y afectuosos.</li>
-        <li>Guardá favoritos y activá recordatorios.</li>
-        <li>Bilingüe: Español e Inglés.</li>
-      </ul>
-    </div>
-  </section>
 
-  <section id="features" class="grid">
-    <div class="card"><h3>Mensajes que acompañan</h3><p class="small">Diálogos cortos y cálidos para mañana, tarde y noche.</p></div>
-    <div class="card"><h3>Recordatorios simples</h3><p class="small">Medicinas, hidratación, paseos y llamadas.</p></div>
-    <div class="card"><h3>Bilingüe ES/EN</h3><p class="small">Voces naturales en ambos idiomas.</p></div>
-    <div class="card"><h3>Privacidad primero</h3><p class="small">Datos mínimos y control claro.</p></div>
-  </section>
-
-  <section id="personas" class="grid">
-    <div class="card"><h3>Iris</h3><p class="small">Cálida, cercana, tono guitarra.</p></div>
-    <div class="card"><h3>Luna</h3><p class="small">Joven, positiva, tono arpa.</p></div>
-    <div class="card"><h3>Max</h3><p class="small">Práctico, sereno, tono piano.</p></div>
-    <div class="card"><h3>Linda</h3><p class="small">Afectuosa, lúdica, estilo perrita.</p></div>
-  </section>
-
-  <section id="beta" class="card">
-    <h2 style="margin:0 0 8px">Sumarme a la Beta</h2>
-    <p class="small">Dejanos tu correo para invitarte cuando abramos la prueba gratuita. Sin spam.</p>
-    <form class="small" action="mailto:contacto@teayudomama.com" method="post" enctype="text/plain">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:700px">
-        <label>Nombre<br><input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #2b3b4d;background:#0f1a28;color:#eaf2f7"></label>
-        <label>Correo<br><input type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #2b3b4d;background:#0f1a28;color:#eaf2f7"></label>
-      </div>
-      <label style="display:block;margin-top:8px">Mensaje (opcional)
-        <textarea name="message" rows="3" style="width:100%;padding:10px;border-radius:10px;border:1px solid #2b3b4d;background:#0f1a28;color:#eaf2f7"></textarea>
-      </label>
-      <p><button class="btn primary" type="submit">Enviar</button></p>
-    </form>
-  </section>
-
-  <footer>
-    <div class="small">© Te Ayudo Mamá · <a href="privacy.html" style="color:#a7bdcc">Privacidad</a> · <a href="terms.html" style="color:#a7bdcc">Términos</a></div>
-  </footer>
-</div>
+    <footer><p>© Te Ayudo Mamá — Proyecto 2025</p></footer>
+  </div>
 </body>
 </html>
